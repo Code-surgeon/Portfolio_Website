@@ -77,6 +77,8 @@ app.use((err, req, res, next) => {
 // ==========================================
 // 5. Start Server
 // ==========================================
-app.listen(PORT, () => {
-  console.log(`Server is running live on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server is running live on port ${PORT}`);
+// });
+
+export default app;
