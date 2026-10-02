@@ -1,0 +1,35 @@
+my-portfolio/
+├── package.json
+├── package-lock.json
+├── server.js                      <-- Express entry point & middleware setup
+├── .env                           <-- Environment variables (DB URL, Session Secret, Admin Password Hash)
+├── .gitignore
+├── config/
+│   └── db.js                      <-- PostgreSQL connection pool
+├── models/
+│   └── setupDb.js                 <-- Initial SQL script to create tables (users, projects, messages)
+├── controllers/
+│   ├── authController.js          <-- Handles admin login, logout, and session check
+│   ├── projectController.js       <-- Handles public fetching & admin CRUD (Create, Update, Delete)
+│   └── contactController.js       <-- Handles saving & viewing contact submissions
+├── routes/
+│   ├── apiRoutes.js               <-- Public API endpoints (/api/projects, /api/contact)
+│   └── adminRoutes.js             <-- Protected admin API endpoints (/api/admin/...)
+├── middleware/
+│   ├── authMiddleware.js          <-- Blocks unauthorized requests unless logged in
+│   └── errorHandler.js            <-- Global error handling
+└── public/                        <-- Static frontend assets
+    ├── index.html                 <-- Public Home page
+    ├── projects.html              <-- Public Projects list page
+    ├── about.html                 <-- Public About / Background page
+    ├── contact.html               <-- Public Contact page
+    ├── admin/                     <-- Secure Admin View Files
+    │   ├── login.html             <-- Admin Login Form
+    │   └── dashboard.html         <-- Admin Control Panel (Add/Edit/Delete projects & view messages)
+    ├── css/
+    │   ├── tailwind.css           <-- Tailwind source directives
+    │   └── styles.css             <-- Compiled CSS output
+    └── js/
+        ├── main.js                <-- Global client scripts
+        ├── projects.js            <-- Fetches & renders public projects dynamically
+        └── admin.js               <-- Handles admin dashboard interactions (forms, delete buttons)

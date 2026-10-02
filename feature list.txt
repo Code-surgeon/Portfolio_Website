@@ -1,0 +1,32 @@
+Part 1: Public-Facing Features
+Fetch Profile & Bio: Retrieve your admin/bio info (name, tagline, email, LinkedIn, GitHub, location) for the homepage and footers.
+
+Fetch Projects: Retrieve all projects (with a filter or limit for featured projects on the homepage, and full view on the projects page).
+
+Fetch Skills: Retrieve all technical skills grouped by category (Languages, Frontend, Backend, etc.) and status.
+
+Fetch Experiences: Retrieve education and work history in chronological order.
+
+Fetch Professional Activities: Retrieve hackathons, certifications, and events.
+
+Submit Contact Form: Allow recruiters/visitors to send a message that gets saved directly into the database.
+
+Part 2: Admin Authentication Features
+Admin Login: Authenticate credentials, hash/verify password with bcrypt, and establish a secure session.
+
+Admin Logout: Destroy the active session.
+
+Check Session Status: Verify if the current browser session is authorized as admin.
+
+Part 3: Admin Dashboard CRUD Features
+Manage Projects (Create, Update, Delete): Add new builds, edit descriptions/links, toggle is_featured, or remove old projects.
+
+Manage Skills (Add, Delete): Add new technologies as you learn them or remove old ones.
+
+Manage Experience & Education (Add, Delete): Update academic milestones or new roles.
+
+Manage Professional Activities (Add, Delete): Add new hackathons or certifications.
+
+Manage Contact Messages (View, Mark as Read, Delete): Read recruiter inquiries, flag them as read, or delete spam.
+
+Update Profile Settings: Edit your bio summary, email, or GitHub/LinkedIn links directly from the dashboard.

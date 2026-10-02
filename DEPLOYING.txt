@@ -1,0 +1,40 @@
+1. SUPABASE:
+
+Step 1: Create Your Supabase Account & Project
+1. Sign Up
+
+    Go to supabase.com.
+
+    Click Start your project and sign in using your GitHub account (this makes linking everything together later seamless).
+
+2. Create a New Project
+
+    Once you're in your Supabase dashboard, click New Project.
+
+    Fill out the project details:
+
+        Name: Give it a clean name (e.g., my-portfolio).
+
+        Database Password: Choose a strong password and save it somewhere safe (you won't need it daily, but it's good to have).
+
+        Region: Select the region closest to you or your target audience for the fastest database response times.
+
+    Click Create new project. It will take about a minute for Supabase to spin up your cloud database.
+
+Step 2: Recreate Your Database Tables
+
+Since you already wrote PostgreSQL schemas locally, we need to run those same DDL scripts in Supabase so your tables (skills, experiences, activities, profile) exist in the cloud.
+
+    On your Supabase project dashboard sidebar on the left, click on the SQL Editor icon (it looks like a terminal/code bracket {}).
+
+    Click New Query.
+
+    Paste your table creation scripts into the editor. If you need a refresher on the table structure for your portfolio data, you can run commands like these:
+
+
+
+Click the Run button at the bottom right of the editor to execute the script and create your tables.
+
+Step 3: Grab Your Credentials (Save for Later)
+
+click connect button, grab Connection parameters(host, port, database, and user) and paste them in .env file

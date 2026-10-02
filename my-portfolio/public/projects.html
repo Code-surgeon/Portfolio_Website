@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | All Projects</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Shared and Page-Specific Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans">
+
+    <!-- ==================== HEADER / NAVBAR ==================== -->
+     <header>
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" style="font-size:30px;" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span  class="w-3 h-3 rounded-full bg-indigo-500 inline-block"></span>
+                My Portfolio
+            </a>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main class="flex-grow max-w-6xl mx-auto px-6 py-12 w-full flex flex-col items-center">
+        
+        <!-- Back Navigation Button (Pinned to the left by filling full width first) -->
+        <div class="w-full max-w-6xl flex justify-start mb-8">
+            <a href="index.html" class="inline-flex items-center space-x-2 text-sm font-medium text-slate-400 hover:text-indigo-400 bg-slate-900 border border-slate-800 hover:border-indigo-500/30 px-4 py-2 rounded-lg transition-all shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                <span>Back to Home</span>
+            </a>
+        </div>
+
+        <!-- Centered Body Wrapper for Title, Filters, and Grid -->
+        <div class="w-full max-w-6xl flex flex-col items-center">
+            
+            <!-- Page Header (Centered) -->
+            <div class="mb-12 text-center">
+                <span class="inline-block py-1 px-3 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold mb-3 tracking-wide uppercase border border-indigo-500/20">
+                    Catalog
+                </span>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-4">
+                    All My Projects
+                </h1>
+            </div>
+
+            <!-- Filter / Search Bar -->
+            <div class="mb-8 w-full flex flex-wrap gap-4 items-center justify-between">
+                <div class="text-sm text-slate-400" id="project-count-indicator">
+                    Showing all projects
+                </div>
+            </div>
+
+            <!-- Projects Grid Container -->
+            <div id="all-projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+                <!-- Loading Skeletons -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 animate-pulse">
+                    <div class="h-4 bg-slate-800 rounded w-3/4 mb-4"></div>
+                    <div class="h-3 bg-slate-800 rounded w-full mb-2"></div>
+                    <div class="h-3 bg-slate-800 rounded w-5/6"></div>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 animate-pulse hidden md:block">
+                    <div class="h-4 bg-slate-800 rounded w-3/4 mb-4"></div>
+                    <div class="h-3 bg-slate-800 rounded w-full mb-2"></div>
+                    <div class="h-3 bg-slate-800 rounded w-5/6"></div>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 animate-pulse hidden lg:block">
+                    <div class="h-4 bg-slate-800 rounded w-3/4 mb-4"></div>
+                    <div class="h-3 bg-slate-800 rounded w-full mb-2"></div>
+                    <div class="h-3 bg-slate-800 rounded w-5/6"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <!-- Page-Specific JavaScript -->
+    <script src="js/projects.js"></script>
+</body>
+</html>

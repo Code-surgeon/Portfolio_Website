@@ -1,0 +1,25 @@
+thanks, let's create a roadmap:
+
+
+
+1. we will start with designing the table structure
+
+2. then we will write the queries to create the tables
+
+3. write middleware functions that we'll need
+
+4. define list of individual features(e.g get projects, delete contact,etc)
+
+5. go through one feature at a time and :
+
+
+
+i, create a database function for that feature
+
+ii, write corresponding controller that calls database function
+
+iii, write route that calls that controller
+
+iv, write javascript code for that feature that calls the route
+
+v, write html and css(remember tailwind)

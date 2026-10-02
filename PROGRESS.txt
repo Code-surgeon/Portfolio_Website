@@ -1,0 +1,7 @@
+1. created database functions, controller and routes
+2. created basic pages and with their js files
+3. have not seeded account and have not tested functionality
+4. template still bare bones
+
+
+NEED TO FLESH OUT ALL PAGES AND TEST

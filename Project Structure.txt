@@ -1,0 +1,36 @@
+my-portfolio/
+├── package.json
+├── package-lock.json
+├── server.js                      <-- Express application entry point
+├── .env                           <-- Environment variables (Database URL, Port)
+├── .gitignore                     <-- Ignores node_modules, .env, build logs
+├── config/
+│   └── db.js                      <-- PostgreSQL connection pool configuration
+├── controllers/
+│   ├── projectController.js       <-- Handles logic for fetching projects from DB
+│   └── contactController.js       <-- Handles saving contact form submissions to DB
+├── routes/
+│   ├── apiRoutes.js               <-- API endpoints (/api/projects, /api/contact)
+│   └── viewRoutes.js              <-- Serves static HTML pages or handles server-side views
+├── middleware/
+│   └── errorHandler.js            <-- Global error handling middleware
+└── public/
+    ├── index.html
+    ├── projects.html
+    ├── about.html
+    ├── contact.html
+    ├── admin.html                    <-- Secure admin dashboard for CRUD operations
+    ├── css/
+    │   ├── tailwind.css
+    │   └── styles.css
+    |	├── index.css
+    |   ├── projects.css
+    |	├── about.css
+    |   ├── contact.css
+    |   └── admin.css
+    └── js/
+        ├── index.js
+        ├── projects.js
+	├── about.js
+        ├── contact.js
+        └── admin.js                  <-- Client-side logic for login, fetching messages, and CRUD forms
